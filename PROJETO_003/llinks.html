@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+             # = id
+             . = class
+             : = Pseudo-class
+             :: = Pseudo-Elemento
+             > = Children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0000ff2d;
+        }
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Pseudo-Classe são palavras que definem estado de elementos dentro do HTML*/
+        a:visited{
+            color: violet;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        /* Pseudo-Elemento meche diretamente no conteúdo*/
+        a.especial{
+            background-color: #0000ffa2;
+        }
+        a.especial::before{
+            content: '=> ';
+            text-decoration: none;
+            color: rgba(253, 139, 0, 0.76);
+        }
+        a.especial::after{
+            content:' <=';
+            text-decoration: none;
+            color: rgba(253, 139, 0, 0.76);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizandos Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="http://youtube.com/cursoemvideo/" class="especial" target="_blank">Canal no YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
