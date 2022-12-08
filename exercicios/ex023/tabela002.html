@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th, td{
             border: 1px solid #000;
@@ -26,6 +27,12 @@
         thead, tfoot{
             background-color: gray;
             color: #fff;
+        }
+        /*cabaçalho fixo*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         tbody > tr:nth-child(odd){ /* 2n-1 */
             background-color: white;
@@ -175,7 +182,6 @@
                 <td>450 479</td>
             </tr>
         </tbody>
-        
     </table>
 </body>
 </html>
