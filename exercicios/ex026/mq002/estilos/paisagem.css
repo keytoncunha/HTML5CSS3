@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Modo Paisagem landscape */
+
+body{
+    background-image: url('../imagens/cev-landscape.jpg');
+    color: brown;
+}
